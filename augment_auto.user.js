@@ -429,7 +429,7 @@
     // 主函数
     async function main() {
         // 只在注册页面运行
-        if (!window.location.href.includes('login.augmentcode.com')) {
+        if (!window.location.href.includes('login.augmentcode.com') && !window.location.href.includes('auth.augmentcode.com')) {
             return;
         }
 
@@ -482,7 +482,7 @@
                 }
                 
                 // 查找并点击注册按钮
-                const signupBtn = await waitForElement('button[type="submit"]');
+                const signupBtn = await waitForElement('button[type="button"]');
                 if (signupBtn) {
                     signupBtn.click();
                     logger.log('点击注册按钮完成', 'success');

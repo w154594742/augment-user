@@ -2,6 +2,10 @@
 
 这是一个用于自动化完成 AugmentCode 平台注册流程的工具。
 
+## 必备条件
+你首先要有一个cloudflare的域名邮箱，玩过 cursor auto free的肯定都知道。
+然后执行 augment-magic.exe 清理机器码。然后在继续执行 augment_auto.user.js 脚本。
+
 ## 项目描述
 
 本工具是一个基于 Tampermonkey 的用户脚本，能够自动化完成 AugmentCode 平台的注册过程。它提供了一个友好的用户界面来显示注册进度，并能够自动处理邮箱验证等复杂流程。
